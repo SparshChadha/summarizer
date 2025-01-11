@@ -1,5 +1,6 @@
 /* src/components/Navbar.css */
 .navbar {
+  font-family: New York;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,6 +23,7 @@
   }
   
   .nav-links {
+    size:20px;
     list-style: none;
     display: flex;
     gap: 20px;
@@ -48,7 +50,7 @@
   }
   
   .navbar-right .nav-links li {
-    margin-left: 20px;
+    margin-left: -10px;
   }
   
   @media (max-width: 768px) {
@@ -70,5 +72,22 @@
     .navbar-right {
       margin-top: 10px;
     }
+  }
+  
+  .logo {
+    max-width: 200px;  /* Adjust this as needed */
+    height: auto;
+  }
+  
+  .account-logo {
+    width: 50px;  /* Adjust the size as needed */
+    height: 40px;
+  }
+  
+ .pricing-logo {
+    width: 50px; /* Adjust width as needed */
+    height: 40px; /* Maintain aspect ratio */
+    vertical-align: middle; /* Aligns the icon vertically */
+    cursor: pointer; /* Pointer cursor on hover */
   }
   

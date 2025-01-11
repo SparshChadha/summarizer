@@ -1,0 +1,15 @@
+/* src/pages/ComingSoon.css */
+.coming-soon {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make the div take up the full height of the screen */
+    background-color: #f0f0f0; /* Optional: set a background color */
+    font-family: Arial, sans-serif; /* Optional: set a custom font */
+  }
+  
+  .coming-soon h1 {
+    font-size: 3rem; /* Adjust the font size as needed */
+    color: #333; /* Set the text color */
+  }
+  

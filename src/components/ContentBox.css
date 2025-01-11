@@ -183,158 +183,160 @@
 
 
     /* src/components/ContentBox.css */
-.content-box-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 20px;
-    height: auto; /* Ensures content adapts to its size */
-  }
-  
-  .content-box {
-    flex: 1; /* Ensures both boxes are of equal width */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    min-height: 400px; /* Set a minimum height */
-    position: relative;
-    max-width: 48%; /* To ensure boxes stay side-by-side */
-  }
-  
-  .left-box, .right-box {
-    width: 100%;
-  }
-  
-  h3 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 15px;
-  }
-  
-  .content-input-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 100%;
-  }
-  
-  .icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .icon-container {
-    display: flex;
-    flex-direction: column; /* Stacks icons vertically */
-    align-items: center; /* Centers icons horizontally */
-    justify-content: center; /* Centers icons vertically */
-    height: 100%; /* Ensures full height usage */
-    position: relative; /* Allows positioning adjustments */
-  }
-  
-  .icon {
-    font-size: 50px; /* Icon size */
-    width: 60px; /* Icon box width */
-    height: 60px; /* Icon box height */
-    margin: 10px; /* Adjust spacing */
-    color: #555; /* Icon color */
-    transition: transform 0.3s ease, color 0.3s ease;
-    cursor: pointer;
-    position: relative; /* Enables adjustments using 'top' */
-    top: 50px; /* Moves the icons 20px downward */
-  }
-  
-  .icon:hover {
-    transform: scale(1.2); /* Optional: Slight enlargement on hover */
-    color: #f39c12; /* Optional: Change color on hover */
-  }
-  
-  .icon-text {
-    display: block;
-    font-size: 12px; /* Text size */
-    margin-top: 5px; /* Space between icon and text */
-    position: relative;
-    top: 100px; /* Moves text down alongside icons */
-  }
-  
-  
-  .icon:hover {
-    color: #f39c12;
-    transform: scale(1.2);
-  }
-  
-  .content-input {
-    width: 100%;
-    height: 150px;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    outline: none;
-    resize: none;
-    margin-bottom: 20px;
-  }
-  
-  .file-input {
-    margin-top: 20px;
-  }
-  
-  /* Fix for the right box's text box */
-.output-content {
-    width: 97%;
-    height: 150px; /* Matches the size of the left box textarea */
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    outline: none;
-    resize: none;
-    background-color: #fff;
-    color: #333;
-    overflow-y: auto;
-    margin-bottom: 20px; /* Ensures spacing before the summarize button */
-  }
-  
-  /* "Change Selection" button styling */
-  .reset-btn {
-    padding: 10px 2px; /* Adjust padding for button size */
-    font-size: 16px; /* Adjust font size */
-    background-color: #f39c12; /* Button background color */
-    color: white; /* Text color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Change cursor on hover */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
-    display: block;
-    width: 35%; /* Full width to fill container (optional) */
-    margin-top: 20px; /* Spacing from elements above */
-  }
-  
-  .reset-btn:hover {
-    background-color: #e67e22; /* Darker shade on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
-  }
-  
-  
-  
-  
+    .content-box-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px;
+      height: auto; /* Ensures content adapts to its size */
+    }
+    
+    .content-box {
+      flex: 1; /* Ensures both boxes are of equal width */
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      min-height: 400px; /* Set a minimum height */
+      position: relative;
+      max-width: 48%; /* To ensure boxes stay side-by-side */
+    }
+    
+    .left-box, .right-box {
+      width: 100%;
+    }
+    
+    h3 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    
+    .content-input-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: 100%;
+    }
+    
+    .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .icon-container {
+      display: flex;
+      flex-direction: column; /* Stacks icons vertically */
+      align-items: center; /* Centers icons horizontally */
+      justify-content: center; /* Centers icons vertically */
+      height: 100%; /* Ensures full height usage */
+      position: relative; /* Allows positioning adjustments */
+    }
+    
+    .icon {
+      font-size: 50px; /* Icon size */
+      width: 60px; /* Icon box width */
+      height: 60px; /* Icon box height */
+      margin: 10px; /* Adjust spacing */
+      color: #555; /* Icon color */
+      transition: transform 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+      position: relative; /* Enables adjustments using 'top' */
+      top: 50px; /* Moves the icons 20px downward */
+    }
+    
+    .icon:hover {
+      transform: scale(1.2); /* Optional: Slight enlargement on hover */
+      color: #f39c12; /* Optional: Change color on hover */
+    }
+    
+    .icon-text {
+      display: block;
+      font-size: 12px; /* Text size */
+      margin-top: 5px; /* Space between icon and text */
+      position: relative;
+      /* top: 100px; Moves text down alongside icons */
+    }
+    
+    
+    .icon:hover {
+      color: #f39c12;
+      transform: scale(1.2);
+    }
+    
+    .content-input {
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      outline: none;
+      resize: none;
+      margin-bottom: 20px;
+    }
+    
+    .file-input {
+      margin-top: 20px;
+    }
+    
+    /* Fix for the right box's text box */
+  .output-content {
+      width: auto;
+      height: auto; /* Matches the size of the left box textarea */
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      outline: none;
+      resize: none;
+      background-color: #fff;
+      color: #333;
+      overflow-y: auto;
+      margin-bottom: 20px; /* Ensures spacing before the summarize button */
+    }
+    
+    /* "Change Selection" button styling */
+    .reset-btn {
+      padding: 10px 2px; /* Adjust padding for button size */
+      font-size: 16px; /* Adjust font size */
+      background-color: #f39c12; /* Button background color */
+      color: white; /* Text color */
+      border: none; /* Remove border */
+      border-radius: 5px; /* Rounded corners */
+      cursor: pointer; /* Change cursor on hover */
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+      display: block;
+      width: 35%; /* Set button width */
+      margin: 20px auto; /* Center the button horizontally */
+      text-align: center; /* Center text inside the button */
+    }
+    
+    
+    .reset-btn:hover {
+      background-color: #e67e22; /* Darker shade on hover */
+      transform: scale(1.05); /* Slightly enlarge on hover */
+    }
+    
+    
+    
+    /* Modify the summarize button to make it more centered or adjusted */
   .summarize-btn {
     font-size: 18px;
     position: absolute;
-    bottom: 150px;
+    bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
     padding: 18px 30px;
@@ -349,25 +351,142 @@
   .summarize-btn:hover {
     background-color: #e67e22;
   }
-  
-  @media (max-width: 768px) {
-    .content-box-container {
-      flex-direction: column;
+    
+    @media (max-width: 768px) {
+      .content-box-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .content-box {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+    
+      .icons {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .summarize-btn {
+        width: 80%;
+      }
+    }
+    
+    .input-method-container {
+      display: flex;
+      justify-content: space-between; /* Pushes content to both ends */
       align-items: center;
+      margin-bottom: 15px;
     }
-  
-    .content-box {
-      width: 90%;
-      margin-bottom: 20px;
-    }
-  
-    .icons {
-      flex-direction: column;
+    
+    .max-word-limit-container {
+      display: flex;
       align-items: center;
+      justify-content: flex-end; /* Aligns the max word limit input to the right */
+      margin-bottom: 15px;
+  
+    }
+    
+    .max-word-limit-container label {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    
+    .max-word-limit-input {
+      width: 80px;
+      padding: 5px;
+      font-size: 14px;
+      border-radius: 10px;
     }
   
-    .summarize-btn {
-      width: 80%;
-    }
+    /* Position the download button at the far left of the screen */
+  .download-btn {
+    position: fixed;
+    bottom: 20px;   /* Adjust this value for the desired distance from the bottom */
+    right: 20px;     /* Adjust this value for the desired distance from the left */
+    z-index: 10;    /* Ensure the button is above other elements */
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green color for the button */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .download-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+    /* src/components/ContentBox.css */
+  .icon-image {
+    width: 60px;  /* Adjust the size as needed */
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  /* Conditional Styling Based on Method */
+  .content-input.paste {
+    width: 600px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+    margin-bottom: 20px;
+  }
+  
+  .content-input.url {
+    width: 600px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+    margin-bottom: 20px;
+  }
+  .output-content {
+    width: 95%;
+    height: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+    background-color: #fff;
+    color: #333;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  }
+  
+  
+  .output-scrollable {
+    white-space: pre-wrap; /* Ensure text wraps to the next line */
+    word-wrap: break-word; /* Break long words to prevent overflow */
+  }
+  
+  /* Center the headings in the layout */
+  .center-heading {
+    text-align: center; /* Centers the text horizontally */
+    font-size: 24px; /* Adjust the size of the heading */
+    color: #333; /* Set the color of the heading */
+    margin-bottom: 20px; /* Add spacing below the heading */
+    font-weight: bold; /* Make the heading bold */
+  }
+  
+  /* Beautified text styling */
+  .beautified-text {
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.8; /* Increase line spacing for better readability */
+    margin-bottom: 10px; /* Add spacing between sentences */
+    color: #333;
   }
   

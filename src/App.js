@@ -1,18 +1,25 @@
 // src/App.js
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  // Use Routes instead of Switch
 import Navbar from './components/Navbar';
-import ContentBox from './components/ContentBox';
-import './App.css';
+import ComingSoon from '../src/pages/comingSoon'; // Import ComingSoon component
+// src/App.js
+import HomePage from '../src/pages/homepage';  // Correct the import path to match the filename
+; // Import HomePage component
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <Navbar />
-      <ContentBox />
-      <div className="content">
-        {/* Add your content here */}
-      </div>
-    </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} /> {/* Default route */}
+        <Route path="/paraphrasing" element={<ComingSoon />} />
+        <Route path="/sentence-generator" element={<ComingSoon />} />
+        <Route path="/conclusion-generator" element={<ComingSoon />} />
+        <Route path="/other-tools" element={<ComingSoon />} />
+        {/* You can add other routes here if needed */}
+      </Routes>
+    </Router>
   );
 }
 

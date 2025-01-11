@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Content Summarizer</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 10px; }
+    button { padding: 10px; margin-top: 10px; }
+    input { width: 100%; padding: 5px; margin-top: 10px; }
+    #summaryResult { margin-top: 20px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h2>Summarize Content</h2>
+  <input type="text" id="urlInput" placeholder="Enter URL">
+  <button id="summarizeBtn">Summarize</button>
+  <hr>
+  <input type="file" id="fileInput">
+  <button id="uploadBtn">Upload and Summarize</button>
+  <div id="summaryResult"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
